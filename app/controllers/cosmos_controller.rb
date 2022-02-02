@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class CosmosController < ApplicationController
   def index
     response.headers.delete('X-Frame-Options')
