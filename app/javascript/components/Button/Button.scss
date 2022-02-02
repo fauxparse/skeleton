@@ -11,10 +11,10 @@
   padding: var(--button-padding-vertical) var(--button-padding-horizontal);
   border: 0;
   border-radius: var(--button-border-radius);
-  font: inherit;
-  line-height: 1.5;
   background-color: var(--button-background);
   color: inherit;
+  font: inherit;
+  line-height: 1.5;
   text-decoration: none;
 
   &:hover,
