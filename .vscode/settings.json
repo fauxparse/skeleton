@@ -2,6 +2,9 @@
   "[ruby]": {
     "editor.defaultFormatter": "misogi.ruby-rubocop"
   },
+  "[gemfile]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true
 }

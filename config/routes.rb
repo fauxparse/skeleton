@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   get 'cosmos', to: 'cosmos#index' if Rails.env.development?
   get '*path', to: 'frontend#index'
