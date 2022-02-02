@@ -1,0 +1,7 @@
+{
+  "rootDir": "./app/javascript",
+  "port": 3001,
+  "staticPath": "public",
+  "userDepsFilePath": "entrypoints/cosmos.userdeps.js",
+  "experimentalRendererUrl": "http://localhost:3000/cosmos"
+}
