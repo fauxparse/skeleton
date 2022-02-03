@@ -1,0 +1,60 @@
+@use "@styles/colors.module";
+
+:root {
+  @each $hue, $shades in colors.$colors {
+    @each $shade, $color in $shades {
+      --#{$hue}-#{$shade}-value: "#{$color}";
+    }
+  }
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Operator Mono Ssm Lig", monospace;
+}
+
+.color {
+  display: flex;
+  gap: 2rem;
+
+  &__name {
+    flex: 0 0 6rem;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  &__shades {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+    gap: 0.5rem;
+  }
+
+  &__shade {
+    font-size: 0.75rem;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2rem;
+      border-radius: var(--border-radius);
+      background-color: var(--color);
+    }
+
+    span {
+      display: block;
+      opacity: 0.75;
+    }
+  }
+
+  &__hex {
+    &::before {
+      content: var(--hex);
+    }
+  }
+}

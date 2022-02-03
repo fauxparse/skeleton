@@ -2,8 +2,8 @@
   --button-padding-horizontal: 1rem;
   --button-padding-vertical: 0.5rem;
   --button-border-radius: 0.25rem;
-  --button-background: #ccc;
-  --button-background-hover: #ddd;
+  --button-background: var(--pink-500);
+  --button-background-hover: var(--pink-600);
 }
 
 .button {

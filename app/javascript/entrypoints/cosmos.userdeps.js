@@ -6,6 +6,7 @@
 
 
 import fixture0 from './../components/Button/Button.fixture.tsx';
+import fixture1 from './../styles/Colors.fixture.tsx';
 
 
 
@@ -14,7 +15,8 @@ export const rendererConfig = {
 };
 
 export const fixtures = {
-  'components/Button/Button.fixture.tsx': { module: { default: fixture0 } }
+  'components/Button/Button.fixture.tsx': { module: { default: fixture0 } },
+  'styles/Colors.fixture.tsx': { module: { default: fixture1 } }
 };
 
 export const decorators = {
