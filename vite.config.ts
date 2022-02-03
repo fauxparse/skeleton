@@ -10,4 +10,5 @@ export default defineConfig({
     },
   },
   plugins: process.env.NODE_ENV === 'test' ? [] : [RubyPlugin()],
+  clearScreen: false,
 });

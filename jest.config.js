@@ -9,4 +9,8 @@ module.exports = {
   moduleNameMapper: {
     '\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
+  collectCoverage: true,
+  coverageReporters: ['lcov', 'html', 'json'],
+  coverageDirectory: 'coverage/jest',
+  passWithNoTests: true,
 };
