@@ -1,0 +1,26 @@
+@font-face {
+  font-weight: 900;
+  font-style: normal;
+  font-family: "Brother 1816";
+  src: url("@assets/fonts/Brother-1816-Black.woff2") format("woff2"),
+    url("@assets/fonts/Brother-1816-Black.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Brother 1816";
+  src: url("@assets/fonts/Brother-1816-Bold.woff2") format("woff2"),
+    url("@assets/fonts/Brother-1816-Black.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "Brother 1816";
+  src: url("@assets/fonts/Brother-1816-Regular.woff2") format("woff2"),
+    url("@assets/fonts/Brother-1816-Regular.woff") format("woff");
+  font-display: swap;
+}
