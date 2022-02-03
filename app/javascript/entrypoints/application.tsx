@@ -7,7 +7,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { gql, useQuery } from '@apollo/client';
 import GraphQLProvider from '../graphql/Provider';
-import Button from '../components/Button';
 import '../../styles/application.scss';
 
 const QUERY = gql`

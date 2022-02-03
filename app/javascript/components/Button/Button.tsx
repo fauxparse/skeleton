@@ -9,8 +9,6 @@ const Button: ButtonComponent = forwardRef(
       as,
       size = ButtonSize.Medium,
       text,
-      icon,
-      tooltip,
       className,
       children,
       'aria-label': label,
@@ -34,5 +32,7 @@ const Button: ButtonComponent = forwardRef(
     );
   }
 );
+
+Button.displayName = 'Button';
 
 export default Button;

@@ -6,15 +6,15 @@ import {
   Observable,
 } from '@apollo/client';
 import { onError } from '@apollo/client/link/error';
-import { createConsumer, Subscription } from '@rails/actioncable';
+import { createConsumer } from '@rails/actioncable';
 import ActionCableLink from 'graphql-ruby-client/subscriptions/ActionCableLink';
-import { DateTime } from 'luxon';
+// import { DateTime } from 'luxon';
 
 const cable = createConsumer();
 
-const DateTimeField = {
-  read: (value: string) => DateTime.fromISO(value),
-};
+// const DateTimeField = {
+//   read: (value: string) => DateTime.fromISO(value),
+// };
 
 const createCache = () => {
   const cache = new InMemoryCache({});
