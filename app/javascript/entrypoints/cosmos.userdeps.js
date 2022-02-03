@@ -8,7 +8,7 @@
 import fixture0 from './../components/Button/Button.fixture.tsx';
 import fixture1 from './../styles/Colors.fixture.tsx';
 
-
+import decorator0 from './../cosmos.decorator.tsx';
 
 export const rendererConfig = {
   "port": 3001
@@ -20,5 +20,5 @@ export const fixtures = {
 };
 
 export const decorators = {
-
+  'cosmos.decorator.tsx': decorator0
 };

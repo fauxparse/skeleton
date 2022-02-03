@@ -1,3 +1,14 @@
 :root {
   --border-radius: 0.25rem;
 }
+
+:root,
+[data-theme="light"] {
+  --background: white;
+  --foreground: var(--slate-900);
+}
+
+[data-theme="dark"] {
+  --background: var(--slate-800);
+  --foreground: var(--slate-100);
+}
