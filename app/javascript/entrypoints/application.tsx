@@ -5,8 +5,16 @@
 
 import React from 'react';
 import { render } from 'react-dom';
+import { gql, useQuery } from '@apollo/client';
+import GraphQLProvider from '../graphql/Provider';
 import Button from '../components/Button';
 import '../../styles/application.scss';
+
+const QUERY = gql`
+  {
+    testField
+  }
+`;
 
 //    <%= vite_javascript_tag 'application' %>
 console.log('Vite ⚡️ Rails');
@@ -36,5 +44,19 @@ console.log(
 // Example: Import a stylesheet in app/frontend/index.css
 // import '~/index.css'
 
+const Hello: React.FC = () => {
+  const { loading, data } = useQuery(QUERY);
+
+  if (loading) {
+    return <div>Loading…</div>;
+  }
+  return <div>{data.testField}</div>;
+};
+
 const root = document.querySelector('#root');
-render(<Button>App</Button>, root);
+render(
+  <GraphQLProvider>
+    <Hello />
+  </GraphQLProvider>,
+  root
+);

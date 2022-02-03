@@ -48,17 +48,20 @@ gem 'bootsnap', require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem 'vite_rails'
+gem 'vite_rails', '~> 3.0.5'
 
 gem 'net-http', '~> 0.2.0'
+
+gem 'graphql', '~> 1.12'
+gem 'graphql-batch', '~> 0.5.0'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
-  gem 'factory_bot_rails'
-  gem 'shoulda-matchers'
-  gem 'timecop', require: false
+  gem 'factory_bot_rails', '~> 6.2.0'
+  gem 'shoulda-matchers', '~> 5.1.0'
+  gem 'timecop', '~> 0.9.4', require: false
 
   gem 'rspec', '~> 3.10'
   gem 'rspec-rails', '~> 5.1'
@@ -67,7 +70,9 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
-  gem 'web-console'
+  gem 'web-console', '~> 4.2.0'
+
+  gem 'graphiql-rails', '~> 1.7.0'
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
@@ -76,6 +81,7 @@ group :development do
   # gem "spring"
 
   gem 'rubocop', '~> 1.25'
+  gem 'rubocop-graphql', '~> 0.12.3'
   gem 'rubocop-rails', '~> 2.13'
   gem 'rubocop-rspec', '~> 2.8'
 end
