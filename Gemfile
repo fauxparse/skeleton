@@ -55,17 +55,17 @@ gem 'net-http', '~> 0.2.0'
 gem 'graphql', '~> 1.12'
 gem 'graphql-batch', '~> 0.5.0'
 
+gem 'interactor'
+gem 'interactor-rails', github: 'fauxparse/interactor-rails'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
 
   gem 'factory_bot_rails', '~> 6.2.0'
-  gem 'shoulda-matchers', '~> 5.1.0'
-  gem 'timecop', '~> 0.9.4', require: false
 
   gem 'rspec', '~> 3.10'
   gem 'rspec-rails', '~> 5.1'
-  gem 'simplecov', '~> 0.21.2', require: false
 end
 
 group :development do
@@ -84,4 +84,15 @@ group :development do
   gem 'rubocop-graphql', '~> 0.12.3'
   gem 'rubocop-rails', '~> 2.13'
   gem 'rubocop-rspec', '~> 2.8'
+end
+
+group :test do
+  gem 'email_spec', require: false
+  gem 'rspec-collection_matchers'
+  gem 'rspec-its'
+  gem 'shoulda-matchers'
+  gem 'simplecov', '~> 0.21.2', require: false
+  gem 'simplecov-summary', require: false
+  gem 'stub_env', require: false
+  gem 'timecop', require: false
 end
